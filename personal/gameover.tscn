@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://ksl0eh3vwbwl"]
+
+[ext_resource type="Texture2D" uid="uid://cyy5ycodt3p2o" path="res://gameover.png.webp" id="1_4nh4k"]
+[ext_resource type="Script" uid="uid://c3ea0qnyb1gpv" path="res://button.gd" id="2_tpdqf"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Gameover_png" type="Sprite2D" parent="."]
+position = Vector2(606, 317)
+texture = ExtResource("1_4nh4k")
+
+[node name="Button" type="Button" parent="."]
+offset_right = 1182.0
+offset_bottom = 674.0
+text = "tornar a  començar"
+script = ExtResource("2_tpdqf")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
