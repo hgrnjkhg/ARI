@@ -3,6 +3,9 @@ extends CharacterBody2D
 const SPEED = 200
 const JUMP_VELOCITY = -400
 
+func _ready() -> void:
+	position = Vector2(400,170)
+	
 func _physics_process(delta: float) -> void:
 	var velocity = Vector2.ZERO
 	
