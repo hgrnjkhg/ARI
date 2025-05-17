@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=3 uid="uid://bm0e7mxkj5d5i"]
+
+[ext_resource type="Texture2D" uid="uid://qs316b6by1ig" path="res://kenney_jumper-pack/PNG/Background/bg_layer1.png" id="1_048q4"]
+[ext_resource type="Texture2D" uid="uid://gdtu3com6j2r" path="res://kenney_jumper-pack/PNG/Background/bg_layer2.png" id="2_f6v4j"]
+[ext_resource type="Texture2D" uid="uid://dr1eawop8jwvv" path="res://kenney_jumper-pack/PNG/Background/bg_layer3.png" id="3_ptjdn"]
+[ext_resource type="Texture2D" uid="uid://b23u23r2f8nq8" path="res://kenney_jumper-pack/PNG/Background/bg_layer4.png" id="4_qedhj"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture = ExtResource("1_048q4")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+texture = ExtResource("2_f6v4j")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+texture = ExtResource("3_ptjdn")
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4"]
+texture = ExtResource("4_qedhj")
